@@ -1,6 +1,7 @@
 // Wake Button
 let wakeButton = document.getElementById('wakeButton');
 let wakeLock = null;
+
 const lock = async () => {
   try {
     wakeLock = await navigator.wakeLock.request('screen');
@@ -8,6 +9,8 @@ const lock = async () => {
     wakeButton.onclick = unlock;
   } catch (err) {
     console.log(err);
+    wakeButton.innerText = ""
+    wakeButton.onclick = undefined;
   }
 
 }
@@ -20,7 +23,14 @@ const unlock = async () => {
     wakeButton.onclick = lock;
   } catch (err) {
     console.log(err);
+    wakeButton.innerText = ""
+    wakeButton.onclick = undefined;
   }
+}
+
+if (navigator.wakeLock) {
+  wakeButton.innerText = "LOCK";
+  wakeButton.onclick = lock;
 }
 
 // Date and Time

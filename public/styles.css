@@ -29,11 +29,11 @@ div {
 
 #clock {
   font-weight: bold;
-  font-size: min(30vw, 30vh);
+  font-size: min(40vw, 40vh);
   grid-row-start: 2;
-  grid-row-end: 7;
-  grid-column-start: 2;
-  grid-column-end: 12;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 13;
   flex-direction: row;
 }
 

@@ -6,7 +6,8 @@
     <meta name="theme-color" content="#000000" />
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%221em%22 font-size=%2280%22&gt;💤&lt;/text&gt;&lt;/svg&gt;">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%221em%22 font-size=%2280%22&gt;💤&lt;/text&gt;&lt;/svg&gt;" />
     <link rel="stylesheet" href="./styles.css">
     <title>Screensaver</title>
   </head>
@@ -17,10 +18,11 @@
         <div id="minutes">00</div>
       </div>
       <div id="weather" class="centered">
-        <div id="condition"></div>
-        <div id="temperature">&nbsp;0&deg;</div>
+        <div id="temperature">20</div>
+        &deg;
+        <div id="condition">☁️</div>
       </div>
-      <div id="wakeButton" onclick="lock()">LOCK</div>
+      <div id="wakeButton"></div>
     </div>
     <script src="./script.js"></script>
   </body>
