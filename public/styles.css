@@ -29,22 +29,12 @@ div {
 
 #clock {
   font-weight: bold;
-  font-size: min(40vw, 40vh);
+  font-size: min(50vw, 50vh);
   grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 12;
   grid-column-start: 1;
   grid-column-end: 13;
-  flex-direction: row;
-}
-
-#weather {
-  font-weight: bold;
-  font-size: min(20vw, 20vh);
-  grid-row-start: 7;
-  grid-row-end: 12;
-  grid-column-start: 2;
-  grid-column-end: 12;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 #wakeButton {

@@ -38,6 +38,6 @@ let hours = document.getElementById('hours');
 let minutes = document.getElementById('minutes');
 setInterval(() => {
   let time = new Date();
-  hours.innerText = `${time.getHours()}`;
+  hours.innerText = `${time.getHours()}`.padStart(2, '0');
   minutes.innerText = `${time.getMinutes()}`.padStart(2, '0');
 }, 1000)
