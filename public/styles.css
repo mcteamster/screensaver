@@ -5,7 +5,7 @@ body {
   padding: 0;
   background: black;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 div {
@@ -29,11 +29,11 @@ div {
 
 #clock {
   font-weight: bold;
-  font-size: min(50vw, 50vh);
+  font-size: 40vh;
   grid-row-start: 2;
   grid-row-end: 12;
-  grid-column-start: 1;
-  grid-column-end: 13;
+  grid-column-start: 2;
+  grid-column-end: 12;
   flex-direction: column;
 }
 
